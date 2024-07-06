@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_gradient"
+    tools:context=".Profile_edit">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/back_arrow"
+        android:background="@drawable/circle_background"
+        android:padding="10dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/> <!-- Positioned at the start (left) -->
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop" />
+
+    <!-- Toggle Button -->
+    <ToggleButton
+        android:id="@+id/toggle_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="-15dp"
+        android:layout_alignEnd="@id/profile_image"
+        android:background="@drawable/toggle_background"
+        android:textOn=""
+        android:textOff=""
+        android:drawableTop="@drawable/baseline_legend_toggle_24"
+        android:padding="5dp" />
+
+    <!-- CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggle_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/royalpurple"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/white">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/name_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email-Id"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/username_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="example@gmail.com"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/email_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Password -->
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Password-->
+            <TextView
+                android:id="@+id/password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="****"
+                android:layout_below="@id/password"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:hint="Enter password"
+                android:layout_below="@id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+
+            <!-- Total Spending -->
+            <TextView
+                android:id="@+id/spending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Spending"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/password_edit_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"/>
+
+            <!-- Total Spending -->
+            <TextView
+                android:id="@+id/totalSpending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="1200"
+                android:layout_below="@id/spending"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/royalpurple"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/totalSpending"
+                android:layout_marginLeft="60dp"
+                />
+            <!-- Edit Button -->
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Edit"
+                android:backgroundTint="@color/royalpurple"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/logout_button"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/totalSpending"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

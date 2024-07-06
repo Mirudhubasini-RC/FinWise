@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- selected_tint.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state -->
+    <item android:state_selected="true">
+        <color android:color="#800080FF" />
+    </item>
+    <!-- Default state -->
+    <item>
+        <color android:color="@android:color/transparent" />
+    </item>
+</selector>

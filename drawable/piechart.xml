@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <!-- Pie Chart Slices -->
+
+
+    <path
+        android:pathData="M12,12
+        L22,12
+        A10,10 0 0,1 12,22
+        Z"
+        android:fillColor="#33FF57"/>
+
+    <path
+        android:pathData="M12,12
+        L12,22
+        A10,10 0 0,1 2,12
+        Z"
+        android:fillColor="#337AFF"/>
+
+    <path
+        android:pathData="M12,12
+        L2,12
+        A10,10 0 0,1 12,2
+        Z"
+        android:fillColor="#FFC733"/>
+
+    <!-- Pie Chart Center -->
+
+
+</vector>
